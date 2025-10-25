@@ -38,9 +38,3 @@ Retorna todos os empréstimos com dataDevolucaoPrevista < data atual e status AT
 Contar quantidade de livros por categoria
 GET http://localhost:8080/livros/estatisticas/categorias
 Retorna uma lista com o nome da categoria e a quantidade de livros em cada uma, ordenada por quantidade decrescente.
-
-💡 Observações:
-
-Todos os endpoints que retornam entidades com relacionamentos N:N (como livros ↔ autores) usam DTO ou @JsonIgnore para evitar recursão infinita.
-
-Formato dos parâmetros: evite espaços sem codificação (%20) na URL
